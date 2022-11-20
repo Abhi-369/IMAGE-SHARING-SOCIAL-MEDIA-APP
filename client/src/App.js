@@ -13,7 +13,7 @@ const App = () => {
     if (!User){
       navigate('/login');
     } else {
-      navigate('/')
+      navigate('/');
     }
   }, []);
 

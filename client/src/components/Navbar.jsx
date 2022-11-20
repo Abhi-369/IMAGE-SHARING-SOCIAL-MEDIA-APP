@@ -6,8 +6,6 @@ import { BsPlusLg } from 'react-icons/bs';
 const Navbar = ({ searchTerm, setSearchTerm, user }) => {
   const navigate = useNavigate();
 
-  console.log("userp[rofile", user)
-
   if (user) {
     return (
       <div className="flex gap-2 md:gap-5 w-full items-center py-4">

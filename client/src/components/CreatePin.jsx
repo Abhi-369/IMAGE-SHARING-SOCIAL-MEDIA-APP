@@ -18,11 +18,10 @@ const CreatePin = ({ user }) => {
   const [wrongImageType, setWrongImageType] = useState(false);
 
   const navigate = useNavigate();
-  console.log("lol", imageAsset);
+  console.log('lol', imageAsset);
 
   const uploadImage = (e) => {
     const selectedFile = e.target.files[0];
-    
     // uploading asset to sanity
     if (selectedFile.type === 'image/png' || selectedFile.type === 'image/svg' || selectedFile.type === 'image/jpeg' || selectedFile.type === 'image/gif' || selectedFile.type === 'image/tiff') {
       setWrongImageType(false);
@@ -152,7 +151,6 @@ const CreatePin = ({ user }) => {
               <p className="font-bold">{user.userName}</p>
             </div>
           )}
-          
           <input
             type="text"
             value={about}
