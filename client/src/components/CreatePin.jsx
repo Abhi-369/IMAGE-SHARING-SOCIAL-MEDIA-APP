@@ -94,7 +94,7 @@ const CreatePin = ({ user }) => {
             }
             {!imageAsset ? (
               // eslint-disable-next-line jsx-a11y/label-has-associated-control
-              <label>
+              <div>
                 <div className="flex flex-col items-center justify-center h-full">
                   <div className="flex flex-col justify-center items-center">
                     <p className="font-bold text-2xl">
@@ -113,7 +113,7 @@ const CreatePin = ({ user }) => {
                   onChange={uploadImage}
                   className="w-0 h-0"
                 />
-              </label>
+              </div>
             ) : (
               <div className="relative h-full">
                 <img
